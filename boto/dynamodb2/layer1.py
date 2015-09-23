@@ -154,7 +154,7 @@ class DynamoDBConnection(AWSQueryConnection):
         "ItemCollectionSizeLimitExceededException": exceptions.ItemCollectionSizeLimitExceededException,
     }
 
-    NumberRetries = 1
+    NumberRetries = 0
 
 
     def __init__(self, **kwargs):
